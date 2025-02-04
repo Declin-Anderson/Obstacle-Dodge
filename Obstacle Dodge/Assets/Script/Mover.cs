@@ -8,8 +8,7 @@ public class Mover : MonoBehaviour
 {
 
     // The speed that the player moves
-    [SerializeField]
-    float moveSpeed = 10f;
+    [SerializeField] float moveSpeed = 10f;
 
     /// <summary>
     /// Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -37,6 +36,9 @@ public class Mover : MonoBehaviour
         Debug.Log("Don't bump into the obstacles or walls");
     }
 
+    /// <summary>
+    /// Moves the player based on Axis Inputs
+    /// </summary>
     void MovePlayer()
     {
         //Getting the input of the arrow keys and WASD to move the box
